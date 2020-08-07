@@ -20,4 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/airtime-top-up', 'TopUpController@topUp')->name('top_up');
 Route::resource('top-up-details', 'TopUpNumbersController');
